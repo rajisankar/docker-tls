@@ -34,7 +34,7 @@ function statusCheck(){
     fi
 }
 
-pause 0 'Set up a working space.  We will use the directory docker-ca in the home directory.'
+pause 0 'Set up a working space.  We will use the directory docker-certs in the home directory.'
 WORKING="docker-certs"
 mkdir -v ~/$WORKING && cd ~/$WORKING && pwd
 if test $(basename $(pwd)) != "$WORKING"
